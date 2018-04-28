@@ -1,0 +1,6 @@
+Enter the 7-bit data code : 1100110
+Code Word : 10111000110
+Enter the Received 11-bit Codeword : 10111001110
+Error Found in Position 8 (from right)
+The Original data is : 1100110
+corrected bit sequence is : 10111000110

@@ -65,12 +65,12 @@ public class Expiment_14 {
 		int source;
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Enter the number of vertices");
+		System.out.print("Enter the number of vertices : ");
 		numberofvertices = scanner.nextInt();
 
 		int adjacencymatrix[][] = new int[numberofvertices + 1][numberofvertices + 1];
 
-		System.out.println("Enter the adjacency matrix");
+		System.out.println("Enter the adjacency matrix : ");
 		for (int sourcenode = 1; sourcenode <= numberofvertices; sourcenode++){
 			for (int destinationnode = 1; destinationnode <= numberofvertices; destinationnode++){
 				adjacencymatrix[sourcenode][destinationnode] = scanner.nextInt();
@@ -88,9 +88,6 @@ public class Expiment_14 {
 		Calculation(adjacencymatrix);
 
 		System.out.println("\n\n****** Routing table for requre node *******");
-		System.out.print("Enter a node for Routing Table : ");
-		source = scanner.nextInt();
-
 		printMatrix();
 		scanner.close(); 
 	}
